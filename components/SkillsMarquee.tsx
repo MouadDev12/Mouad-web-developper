@@ -1,17 +1,16 @@
 import React from 'react';
-import { Cpu, Globe, Database, Layers, Figma, Terminal, Code } from 'lucide-react';
+import { SiReact, SiJavascript, SiTailwindcss, SiHtml5, SiPhp, SiLaravel, SiFigma, SiPython, SiGithub } from 'react-icons/si';
 
 const TECHS = [
-  { name: 'React', icon: Globe },
-  { name: 'TypeScript', icon: Code },
-  { name: 'Node.js', icon: Terminal },
-  { name: 'Tailwind CSS', icon: Layers },
-  { name: 'Next.js', icon: Cpu },
-  { name: 'Firebase', icon: Database },
-  { name: 'Figma', icon: Figma },
-  { name: 'Python', icon: Code },
-  { name: 'PostgreSQL', icon: Database },
-  { name: 'AWS', icon: Globe },
+  { name: 'React', icon: SiReact },
+  { name: 'JavaScript', icon: SiJavascript },
+  { name: 'Tailwind CSS', icon: SiTailwindcss },
+  { name: 'HTML', icon: SiHtml5 },
+  { name: 'PHP', icon: SiPhp },
+  { name: 'Laravel', icon: SiLaravel },
+  { name: 'Figma', icon: SiFigma },
+  { name: 'Python', icon: SiPython },
+  { name: 'Git&GitHub', icon: SiGithub },
 ];
 
 const SkillsMarquee: React.FC = () => {

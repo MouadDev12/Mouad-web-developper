@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, Github, Linkedin, Instagram, Twitter, Globe } from 'lucide-react';
+import Logo from './Logo';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -7,20 +8,40 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
+  const [currentTime, setCurrentTime] = useState<string>('');
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true,
+        timeZone: 'Africa/Casablanca'
+      });
+      setCurrentTime(timeString);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="home" className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-6 pt-20">
       
       {/* Header Info (Matching Top of Ref Image) */}
-      <div className="absolute top-8 left-12 flex items-center gap-2">
-        <div className="w-8 h-8 bg-white rotate-45 flex items-center justify-center overflow-hidden">
-          <div className="w-6 h-6 bg-black -rotate-45"></div>
+      <div className="absolute top-8 left-12 flex items-center gap-3">
+        <div className="w-10 h-10">
+          <Logo className="w-full h-full" glow={true} />
         </div>
         <span className="font-sora font-bold text-lg tracking-tight">Mouad</span>
       </div>
 
       <div className="absolute top-8 right-12 text-right hidden md:block">
-        <p className="text-[10px] text-prestige-gray uppercase tracking-widest">Agadir, Morocco</p>
-        <p className="text-[12px] font-mono text-white mt-1">11:42 PM</p>
+        <p className="text-[10px] text-prestige-gray uppercase tracking-widest">AGADIR, AITMELLOUL, MOROCCO</p>
+        <p className="text-[12px] font-mono text-white mt-1">{currentTime}</p>
       </div>
 
       <div className="absolute top-8 left-1/2 -translate-x-1/2 flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
@@ -38,7 +59,7 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
           
           <div className="relative w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
             <img 
-              src="https://media.licdn.com/dms/image/v2/D4E03AQF4O3F9z9-fXQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715444853037?e=1746057600&v=beta&t=U3ZJb6nF0V9Y7w-p7vYV-k-j-U-Y-v-q-Z-q-Y-j-V-k" 
+              src="/IMAGES/mouad.png" 
               alt="Mouad Mekrech" 
               className="w-full h-full object-cover grayscale brightness-75 contrast-125 group-hover:grayscale-0 transition-all duration-1000"
             />
@@ -59,12 +80,12 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
           <p className="font-sora text-sm md:text-base text-prestige-gray uppercase tracking-[0.2em]">
             Hi, I'm <span className="text-white">Mouad Mekrech</span>.
             <br />
-            Working as <span className="text-white">Web Designer</span> and <span className="text-white">Developer</span>.
+            Developper <span className="text-white">Web </span> Full <span className="text-white">Stack</span>.
           </p>
 
           {/* Social icons */}
           <div className="flex justify-center gap-6">
-            {[Twitter, Globe, Instagram, Linkedin].map((Icon, idx) => (
+            {[Github, Linkedin, Instagram].map((Icon, idx) => (
               <a key={idx} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-prestige-gray hover:text-prestige-red hover:border-prestige-red transition-all">
                 <Icon size={18} />
               </a>
@@ -86,7 +107,7 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
               onClick={onResumeClick}
               className="px-8 py-3 rounded-full border border-white/10 text-prestige-gray hover:text-white transition-all text-sm uppercase tracking-widest font-bold"
             >
-              View My Works
+              Resume CV
             </button>
           </div>
         </div>

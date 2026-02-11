@@ -6,28 +6,24 @@ const SKILLS = [
     name: 'UI/UX DESIGN', 
     category: 'Creative', 
     icon: Palette, 
-    level: 95, 
     description: 'Specializing in high-fidelity prototypes and prestige digital interfaces.'
   },
   { 
-    name: 'REACT / NEXT.JS', 
+    name: 'REACT ', 
     category: 'Frontend', 
     icon: Cpu, 
-    level: 90, 
     description: 'Expertise in building scalable, performance-driven web applications.'
   },
   { 
     name: 'NODE / DATABASE', 
     category: 'Backend', 
     icon: Globe, 
-    level: 85, 
     description: 'Robust server-side logic and database architecture for complex systems.'
   },
   { 
     name: 'BRANDING', 
     category: 'Marketing', 
     icon: Megaphone, 
-    level: 80, 
     description: 'Crafting unique visual identities that resonate with premium audiences.'
   },
 ];
@@ -45,7 +41,7 @@ const Skills: React.FC = () => {
           <div className="space-y-4">
             <span className="text-prestige-red font-bold text-[10px] uppercase tracking-[0.4em]">Tech Stack & Mastery</span>
             <h2 className="font-sora text-4xl md:text-6xl font-extrabold text-white leading-tight">
-              Behind every design is <br /> 
+              Behind every line of code is <br /> 
               <span className="text-prestige-gray">an even greater story.</span>
             </h2>
           </div>
@@ -57,15 +53,15 @@ const Skills: React.FC = () => {
           <div className="flex flex-wrap gap-12 pt-8">
             <div className="group">
               <p className="text-5xl font-sora font-extrabold text-white group-hover:text-prestige-red transition-colors">4+</p>
-              <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Years Experience</p>
+              <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Years Crafting Code</p>
             </div>
             <div className="group">
               <p className="text-5xl font-sora font-extrabold text-white group-hover:text-prestige-red transition-colors">50+</p>
-              <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Projects Completed</p>
+              <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Projects Delivered</p>
             </div>
             <div className="group">
               <p className="text-5xl font-sora font-extrabold text-white group-hover:text-prestige-red transition-colors">12</p>
-              <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Tech Certifications</p>
+              <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Technologies Mastered</p>
             </div>
           </div>
         </div>
