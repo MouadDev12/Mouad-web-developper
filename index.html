@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouad Mekrech | Premium Full-Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'prestige-black': '#050505',
+            'prestige-dark': '#0A0A0A',
+            'prestige-red': '#FF3E3E',
+            'prestige-crimson': '#8B0000',
+            'prestige-silver': '#E0E0E0',
+            'prestige-gray': '#71717A',
+          },
+          borderRadius: {
+            'prestige': '16px',
+          },
+          fontFamily: {
+            'sora': ['Sora', 'sans-serif'],
+            'inter': ['Inter', 'sans-serif'],
+            'signature': ['Dancing Script', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700;800&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #050505;
+      color: #FFFFFF;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .glass-panel {
+      background: rgba(15, 15, 15, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .red-glow-hover:hover {
+      box-shadow: 0 0 30px rgba(255, 62, 62, 0.2);
+      border-color: rgba(255, 62, 62, 0.4);
+    }
+
+    .blueprint-grid {
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100px 100px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #050505;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #FF3E3E;
+      border-radius: 10px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .text-glow-red {
+      text-shadow: 0 0 10px rgba(255, 62, 62, 0.5);
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+<body class="font-inter">
+  <div id="root"></div>
+</body>
+</html>
