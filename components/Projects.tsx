@@ -4,105 +4,75 @@ import { Project } from '../types';
 import ProjectModal from './ProjectModal';
 
 const PROJECTS: Project[] = [
+  
   {
     id: '1',
-    title: '3D image slider',
-    category: 'Fintech / Admin',
-    image: '3D image slider.png',
-    description: 'A clean management dashboard for academic institutions, tracking student metrics and revenue.',
-    longDescription: 'XREDUCATION provides a high-level overview of academic performance. Designed with a focus on usability, it features real-time data visualization using Chart.js and a robust Firebase backend for secure data management.',
+    title: 'XREDUCATION Dashboard',
+    category: 'Admin Dashboard / EdTech',
+    image: '/images/XREDUCATION Dashboard.png',
+    description:'Modern admin dashboard designed for educational institutions to monitor students, performance, and revenue.',
+    longDescription:'XREDUCATION is a professional EdTech dashboard focused on clarity and efficiency. It provides real-time insights into student enrollment, financial performance, and academic metrics. Built with scalable architecture and interactive data visualizations, the platform ensures secure data handling and an intuitive user experience for administrators.',
     technologies: ['React', 'Chart.js', 'Tailwind', 'Firebase'],
-    liveUrl: '#',
-    githubUrl: '#'
+    liveUrl: 'https://xreducation-dashboard.vercel.app/',
+    githubUrl: 'https://github.com/MouadDev12/Xreducation-Dashboard'
   },
   {
     id: '2',
-    title: 'XREDUCATION Dashboard',
-    category: 'Fintech / Admin',
-    image: 'https://images.unsplash.com/photo-1551288049-bbda023b88d6?auto=format&fit=crop&q=80&w=800',
-    description: 'A clean management dashboard for academic institutions, tracking student metrics and revenue.',
-    longDescription: 'XREDUCATION provides a high-level overview of academic performance. Designed with a focus on usability, it features real-time data visualization using Chart.js and a robust Firebase backend for secure data management.',
-    technologies: ['React', 'Chart.js', 'Tailwind', 'Firebase'],
-    liveUrl: '#',
-    githubUrl: '#'
+    title: 'Zest & Co.',
+    category: 'E-commerce / Brand Website',
+    image: '/images/Zest and co.png',
+    description:'Premium e-commerce website showcasing artisanal beverages with a smooth and engaging shopping experience.',
+    longDescription:'Zest & Co. is a high-end e-commerce platform designed to elevate brand identity and maximize conversions. The website features refined animations, a clean product layout, and a frictionless checkout flow. Every interaction is crafted to feel premium while remaining fast, responsive, and accessible across all devices.',
+    technologies: ['React', 'Framer Motion', 'Node.js', 'Stripe'],
+    liveUrl: 'https://healthy-drink-shop.vercel.app/',
+    githubUrl: 'https://github.com/MouadDev12/Healthy-Drink-Shop'
   },
   {
     id: '3',
-    title: 'Zest & Co.',
-    category: 'E-commerce',
-    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=800',
-    description: 'An interactive showcase for premium artisanal beverages with fluid shopping experience.',
-    longDescription: 'Zest & Co. uses Framer Motion for delightful micro-interactions. The site is optimized for conversion, featuring a seamless checkout flow and a fully responsive grid that looks beautiful on any device.',
-    technologies: ['React', 'Framer Motion', 'Node.js', 'Stripe'],
-    liveUrl: '#',
-    githubUrl: '#'
+    title: 'SweetCake Patesserie',
+    category: 'Food Business / Showcase Website',
+    image: '/images/SweetCake Patesserie.png',
+    description:'Elegant website for an artisanal pâtisserie, highlighting products, craftsmanship, and brand identity.',
+    longDescription:'SweetCake Pâtisserie is a visually rich showcase website designed to reflect the elegance and creativity of an artisanal bakery. The platform emphasizes high-quality visuals, smooth navigation, and clear product presentation, creating an inviting digital experience that attracts and engages customers.',
+    technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
+    liveUrl: 'https://cackepatesserie-i3t1.vercel.app/',
+    githubUrl: 'https://github.com/MouadDev12/Cackepatesserie'
   },
+  
   {
     id: '4',
-    title: 'CAN 2025 Maroc',
-    category: 'Live Sports',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800',
-    description: 'A sports companion app for tracking the 2025 Africa Cup of Nations with live scores.',
-    longDescription: 'Stay updated with every goal. This application handles high-concurrency real-time data via WebSockets, providing fans with instant notifications and detailed team analytics throughout the tournament.',
+    title: 'Gestion Bibliothéque',
+    category: 'Management System / Education',
+    image: '/images/Gestion Bibliothéque.png',
+    description: 'Library management system for handling books, users, and borrowing operations efficiently.',
+    longDescription:'Gestion Bibliothèque is a complete management system built to simplify library operations. It allows administrators to manage book inventories, track borrowings, and organize users through a clean and functional interface. The system is optimized for usability, performance, and scalability in educational environments.',
     technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
-    liveUrl: '#',
-    githubUrl: '#'
+    liveUrl: 'https://gestionlivres.vercel.app/',
+    githubUrl: 'https://github.com/MouadDev12/gestionlivres'
   },
   {
     id: '5',
-    title: 'CAN 2025 Maroc',
-    category: 'Live Sports',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800',
-    description: 'A sports companion app for tracking the 2025 Africa Cup of Nations with live scores.',
-    longDescription: 'Stay updated with every goal. This application handles high-concurrency real-time data via WebSockets, providing fans with instant notifications and detailed team analytics throughout the tournament.',
+    title: 'Nike Store',
+    category: 'E-commerce / Product Landing',
+    image: '/images/Nike Store.png',
+    description:'Modern product-focused e-commerce experience inspired by Nike’s branding and visual identity.',
+    longDescription: 'Nike Store is a sleek e-commerce interface designed to emphasize products through bold visuals and clean layouts. The project focuses on brand consistency, responsive design, and an optimized user journey from product discovery to checkout.',
     technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
     liveUrl: '#',
     githubUrl: '#'
   },
   {
     id: '6',
-    title: 'CAN 2025 Maroc',
-    category: 'Live Sports',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800',
-    description: 'A sports companion app for tracking the 2025 Africa Cup of Nations with live scores.',
-    longDescription: 'Stay updated with every goal. This application handles high-concurrency real-time data via WebSockets, providing fans with instant notifications and detailed team analytics throughout the tournament.',
+    title: 'Coupe Afrique Can',
+    category: 'Live Sports / Web Application',
+    image: '/images/can afrique.png',
+    description:'Real-time web application for following the Africa Cup of Nations with live scores, fixtures, and team standings.', 
+    longDescription: 'This CAN web application provides real-time match updates, live scores, and tournament standings for football fans. Built with a performance-focused architecture, it leverages WebSockets for instant data updates and delivers a smooth, responsive experience across devices. The project emphasizes scalability, real-time interaction, and clean UI for an engaging sports-tracking experience.',   
     technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
-    liveUrl: '#',
-    githubUrl: '#'
+    liveUrl: 'https://coupe-afrique-can-2025.vercel.app/',
+    githubUrl: 'https://github.com/MouadDev12/coupe_afrique-can-2025'
   },
-  {
-    id: '7',
-    title: 'CAN 2025 Maroc',
-    category: 'Live Sports',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800',
-    description: 'A sports companion app for tracking the 2025 Africa Cup of Nations with live scores.',
-    longDescription: 'Stay updated with every goal. This application handles high-concurrency real-time data via WebSockets, providing fans with instant notifications and detailed team analytics throughout the tournament.',
-    technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    id: '8',
-    title: 'CAN 2025 Maroc',
-    category: 'Live Sports',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800',
-    description: 'A sports companion app for tracking the 2025 Africa Cup of Nations with live scores.',
-    longDescription: 'Stay updated with every goal. This application handles high-concurrency real-time data via WebSockets, providing fans with instant notifications and detailed team analytics throughout the tournament.',
-    technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    id: '9',
-    title: 'CAN 2025 Maroc',
-    category: 'Live Sports',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=800',
-    description: 'A sports companion app for tracking the 2025 Africa Cup of Nations with live scores.',
-    longDescription: 'Stay updated with every goal. This application handles high-concurrency real-time data via WebSockets, providing fans with instant notifications and detailed team analytics throughout the tournament.',
-    technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
-    liveUrl: '#',
-    githubUrl: '#'
-  }
+  
 ];
 
 const Projects: React.FC = () => {

@@ -19,13 +19,8 @@ const SKILLS = [
     category: 'Backend', 
     icon: Globe, 
     description: 'Robust server-side logic and database architecture for complex systems.'
-  },
-  { 
-    name: 'BRANDING', 
-    category: 'Marketing', 
-    icon: Megaphone, 
-    description: 'Crafting unique visual identities that resonate with premium audiences.'
-  },
+  }
+     
 ];
 
 const Skills: React.FC = () => {
@@ -56,7 +51,7 @@ const Skills: React.FC = () => {
               <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Years Crafting Code</p>
             </div>
             <div className="group">
-              <p className="text-5xl font-sora font-extrabold text-white group-hover:text-prestige-red transition-colors">4+</p>
+              <p className="text-5xl font-sora font-extrabold text-white group-hover:text-prestige-red transition-colors">2+</p>
               <p className="text-[10px] text-prestige-gray uppercase tracking-widest mt-2">Projects Delivered</p>
             </div>
             <div className="group">
@@ -83,13 +78,10 @@ const Skills: React.FC = () => {
               {/* Progress Bar */}
               <div className="space-y-2">
                 <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest">
-                  <span className="text-prestige-gray">Mastery</span>
-                  <span className="text-white">{skill.level}%</span>
                 </div>
                 <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden">
                   <div 
                     className="h-full bg-prestige-red shadow-[0_0_10px_rgba(255,62,62,0.5)] transition-all duration-1000 ease-out"
-                    style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
               </div>

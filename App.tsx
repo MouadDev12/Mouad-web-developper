@@ -10,6 +10,7 @@ import CVModal from './components/CVModal';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import SkillsMarquee from './components/SkillsMarquee';
+import Chatbot from './components/Chatbot';
 import { Section } from './types';
 
 const App: React.FC = () => {
@@ -83,6 +84,7 @@ const App: React.FC = () => {
       </div>
 
       {isCVOpen && <CVModal onClose={() => setIsCVOpen(false)} />}
+      <Chatbot />
     </>
   );
 };

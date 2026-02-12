@@ -23,6 +23,13 @@ const EDUCATION_DATA: EducationItem[] = [
     institution: 'ISTA Tassila',
     period: '2021 — 2022',
     description: 'In-depth study of surveying and mapping using AutoCAD. Developed strong analytical and precision skills.'
+  },
+  {
+    id: '4',
+    degree: 'Technical Surveying',
+    institution: 'ISTA Tassila',
+    period: '2021 — 2022',
+    description: 'In-depth study of surveying and mapping using AutoCAD. Developed strong analytical and precision skills.'
   }
 ];
 
