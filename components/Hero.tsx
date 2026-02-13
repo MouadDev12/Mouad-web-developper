@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, Github, Linkedin, Instagram, Twitter, Globe } from 'lucide-react';
+import { ArrowUpRight, Github, Linkedin, Instagram } from 'lucide-react';
 import Logo from './Logo';
 
 interface HeroProps {
@@ -85,8 +85,9 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
 
           {/* Social icons */}
           <div className="flex justify-center gap-6">
-            {[Github, Linkedin, Instagram].map((Icon, idx) => (
-              <a key={idx} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-prestige-gray hover:text-prestige-red hover:border-prestige-red transition-all">
+            {[{Icon : Github , link : "https://github.com/MouadDev12"}, {Icon : Linkedin , link : "https://www.linkedin.com/in/mouad-mekrech-5b1057330/"}, {Icon : Instagram , link : "https://www.instagram.com/itzme.mouad/"}].map(({Icon , link}, idx) => (
+              <a key={idx} href={link} target="_Blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-prestige-gray hover:text-prestige-red hover:border-prestige-red transition-all">
+
                 <Icon size={18} />
               </a>
             ))}

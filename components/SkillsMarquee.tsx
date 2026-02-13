@@ -2,15 +2,15 @@ import React from 'react';
 import { SiReact, SiJavascript, SiTailwindcss, SiHtml5, SiPhp, SiLaravel, SiFigma, SiPython, SiGithub } from 'react-icons/si';
 
 const TECHS = [
-  { name: 'React', icon: SiReact },
-  { name: 'JavaScript', icon: SiJavascript },
-  { name: 'Tailwind CSS', icon: SiTailwindcss },
-  { name: 'HTML', icon: SiHtml5 },
-  { name: 'PHP', icon: SiPhp },
-  { name: 'Laravel', icon: SiLaravel },
-  { name: 'Figma', icon: SiFigma },
-  { name: 'Python', icon: SiPython },
-  { name: 'Git&GitHub', icon: SiGithub },
+  { name: 'React', icon: SiReact, link:"https://react.dev"  },
+  { name: 'JavaScript', icon: SiJavascript, link:"https://developer.mozilla.org/fr/docs/Web/JavaScript" },
+  { name: 'Tailwind CSS', icon: SiTailwindcss, link:"https://tailwindcss.com" },
+  { name: 'HTML', icon: SiHtml5, link:"https://developer.mozilla.org/fr/docs/Web/HTML" },
+  { name: 'PHP', icon: SiPhp, link:"https://www.php.net" },
+  { name: 'Laravel', icon: SiLaravel, link:"https://laravel.com" },
+  { name: 'Figma', icon: SiFigma, link:"https://www.figma.com" },
+  { name: 'Python', icon: SiPython, link:"https://www.python.org" },
+  { name: 'Git&GitHub', icon: SiGithub, link:"https://github.com" },
 ];
 
 const SkillsMarquee: React.FC = () => {
@@ -23,13 +23,19 @@ const SkillsMarquee: React.FC = () => {
         {[...Array(2)].map((_, i) => (
           <div key={i} className="flex items-center">
             {TECHS.map((tech, idx) => (
-              <div key={`${i}-${idx}`} className="flex items-center gap-6 px-12 group/item">
+              <a 
+                key={`${i}-${idx}`} 
+                href={tech.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-6 px-12 group/item hover:opacity-80 transition-opacity cursor-pointer"
+              >
                 <tech.icon size={28} className="text-prestige-gray group-hover/item:text-prestige-red transition-colors" />
                 <span className="text-4xl md:text-5xl font-sora font-extrabold text-white/20 group-hover/item:text-white transition-all tracking-tighter uppercase">
                   {tech.name}
                 </span>
                 <div className="w-2 h-2 rounded-full bg-prestige-red mx-4 opacity-50"></div>
-              </div>
+              </a>
             ))}
           </div>
         ))}
