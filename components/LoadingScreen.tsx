@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const LoadingScreen: React.FC = () => {
   const [progress, setProgress] = useState(0);
   const [wordIndex, setWordIndex] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
 
   const helloWords = [
     { text: "Hello", lang: "English", color: "from-blue-400 to-blue-600", bg: "bg-blue-500/20" },
@@ -15,14 +16,20 @@ const LoadingScreen: React.FC = () => {
   ];
 
   useEffect(() => {
+    // Reset states when component mounts
+    setProgress(0);
+    setWordIndex(0);
+    setIsComplete(false);
+    
     let counter = 0;
     const progressInterval = setInterval(() => {
       counter++;
       setProgress(counter);
       if (counter >= 100) {
+        setIsComplete(true);
         clearInterval(progressInterval);
       }
-    }, 20);
+    }, 30);
 
     const wordInterval = setInterval(() => {
       setWordIndex(prev => (prev < helloWords.length - 1 ? prev + 1 : 0));

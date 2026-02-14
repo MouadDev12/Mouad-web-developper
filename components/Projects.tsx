@@ -10,6 +10,7 @@ const PROJECTS: Project[] = [
     title: 'XREDUCATION Dashboard',
     category: 'Admin Dashboard / EdTech',
     image: '/images/XREDUCATION Dashboard.png',
+    logo: '/images/XREDUCATION Dashboard.png',
     description:'Modern admin dashboard designed for educational institutions to monitor students, performance, and revenue.',
     longDescription:'XREDUCATION is a professional EdTech dashboard focused on clarity and efficiency. It provides real-time insights into student enrollment, financial performance, and academic metrics. Built with scalable architecture and interactive data visualizations, the platform ensures secure data handling and an intuitive user experience for administrators.',
     technologies: ['React', 'Chart.js', 'Tailwind', 'Firebase'],
@@ -21,6 +22,7 @@ const PROJECTS: Project[] = [
     title: 'Zest & Co.',
     category: 'E-commerce / Brand Website',
     image: '/images/Zest and co.png',
+    logo: '/images/Zest and co.png',
     description:'Premium e-commerce website showcasing artisanal beverages with a smooth and engaging shopping experience.',
     longDescription:'Zest & Co. is a high-end e-commerce platform designed to elevate brand identity and maximize conversions. The website features refined animations, a clean product layout, and a frictionless checkout flow. Every interaction is crafted to feel premium while remaining fast, responsive, and accessible across all devices.',
     technologies: ['React', 'Framer Motion', 'Node.js', 'Stripe'],
@@ -28,22 +30,25 @@ const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/MouadDev12/Healthy-Drink-Shop'
   },
   {
-    id: '3',
-    title: 'SweetCake Patesserie',
-    category: 'Food Business / Showcase Website',
-    image: '/images/SweetCake Patesserie.png',
-    description:'Elegant website for an artisanal pâtisserie, highlighting products, craftsmanship, and brand identity.',
-    longDescription:'SweetCake Pâtisserie is a visually rich showcase website designed to reflect the elegance and creativity of an artisanal bakery. The platform emphasizes high-quality visuals, smooth navigation, and clear product presentation, creating an inviting digital experience that attracts and engages customers.',
-    technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
-    liveUrl: 'https://cackepatesserie-i3t1.vercel.app/',
-    githubUrl: 'https://github.com/MouadDev12/Cackepatesserie'
-  },
-  
+  id: '3',
+  title: 'Gestion Stagiaire',
+  category: 'Educational / Interactive Web Application',
+  image: '/images/code-quiz.png',
+  logo: '/images/codequiz-logo.png',
+  description:
+    'Interactive quiz application designed to help users test and improve their programming knowledge in a fun and engaging way.',
+  longDescription:
+    'CodeQuiz is an educational web application focused on interactive learning. It allows users to answer dynamic quiz questions with instant feedback, score tracking, and a responsive user interface. The project emphasizes usability, clean architecture, and an engaging learning experience, making it ideal for students and self-learners in web development.',
+  technologies: ['React', 'Context API', 'JavaScript', 'CSS3', 'Responsive Design'],
+  liveUrl: 'https://codequiz.vercel.app/',
+  githubUrl: 'https://github.com/MouadDev12/CodeQuiz'
+}
   {
     id: '4',
     title: 'Gestion Bibliothéque',
     category: 'Management System / Education',
     image: '/images/Gestion Bibliothéque.png',
+    logo: '/images/Gestion Bibliothéque.png',
     description: 'Library management system for handling books, users, and borrowing operations efficiently.',
     longDescription:'Gestion Bibliothèque is a complete management system built to simplify library operations. It allows administrators to manage book inventories, track borrowings, and organize users through a clean and functional interface. The system is optimized for usability, performance, and scalability in educational environments.',
     technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
@@ -55,6 +60,7 @@ const PROJECTS: Project[] = [
     title: 'Nike Store',
     category: 'E-commerce / Product Landing',
     image: '/images/Nike Store.png',
+    logo: '/images/Nike Store.png',
     description:'Modern product-focused e-commerce experience inspired by Nike’s branding and visual identity.',
     longDescription: 'Nike Store is a sleek e-commerce interface designed to emphasize products through bold visuals and clean layouts. The project focuses on brand consistency, responsive design, and an optimized user journey from product discovery to checkout.',
     technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],
@@ -66,6 +72,7 @@ const PROJECTS: Project[] = [
     title: 'Coupe Afrique Can',
     category: 'Live Sports / Web Application',
     image: '/images/can afrique.png',
+    logo: '/images/can afrique.png',
     description:'Real-time web application for following the Africa Cup of Nations with live scores, fixtures, and team standings.', 
     longDescription: 'This CAN web application provides real-time match updates, live scores, and tournament standings for football fans. Built with a performance-focused architecture, it leverages WebSockets for instant data updates and delivers a smooth, responsive experience across devices. The project emphasizes scalability, real-time interaction, and clean UI for an engaging sports-tracking experience.',   
     technologies: ['Next.js', 'WebSockets', 'Prisma', 'Tailwind'],

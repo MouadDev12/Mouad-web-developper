@@ -1,7 +1,8 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { X, Github, Rocket, Info, Code2, ArrowUpRight } from 'lucide-react';
 import { Project } from '../types';
+import ProjectLoading from './ProjectLoading';
 
 interface ProjectModalProps {
   project: Project;
@@ -9,10 +10,25 @@ interface ProjectModalProps {
 }
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = 'unset'; };
+    
+    // Simulate loading time for better UX
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => { 
+      document.body.style.overflow = 'unset';
+      clearTimeout(timer);
+    };
   }, []);
+
+  if (isLoading) {
+    return <ProjectLoading projectLogo={project.logo || project.image} projectTitle={project.title} />;
+  }
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">

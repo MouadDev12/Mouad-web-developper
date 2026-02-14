@@ -59,7 +59,8 @@ const Contact: React.FC = () => {
               <Send size={80} />
             </div>
             <p className="text-xl font-bold leading-relaxed italic relative z-10 font-sora">
-              "Great design is a conversation. Let's start one and create something meaningful together."
+                "Behind every line of code is an even greater story."
+              
             </p>
           </div>
         </div>

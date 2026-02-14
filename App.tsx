@@ -21,7 +21,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 4000);
 
     const handleScroll = () => {
       const sections = ['home', 'skills', 'projects', 'education', 'contact'];
