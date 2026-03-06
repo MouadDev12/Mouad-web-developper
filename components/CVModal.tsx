@@ -12,117 +12,10 @@ const CVModal: React.FC<CVModalProps> = ({ onClose }) => {
   };
 
   const handleDownloadPDF = () => {
-    // Create a professional CV content as text
-    const cvContent = `
-MOUAD MEKRECH
-Développeur Web Full-Stack
-===============================================
-
-CONTACT
-• Email: mouadmekrech12@gmail.com
-• Téléphone: +212 768-636308
-• LinkedIn: linkedin.com/in/mouad-mekrech
-• GitHub: github.com/mouad-mekrech
-• Localisation: Ait Melloul, Maroc
-
-PROFIL
-Développeur Full-Stack stagiaire à l'ISTA Ait Melloul, spécialisé en technologies web modernes.
-Actuellement à la recherche d'un stage pour mettre en pratique mes compétences et contribuer à des projets professionnels.
-
-FORMATION
-• TECHNICIEN SPÉCIALISÉ EN DÉVELOPPEMENT WEB
-  ISTA AIT MELLOU | 2024 - Présent
-  Formation spécialisée en développement web avec focus sur React, Node.js, bases de données et technologies modernes.
-
-• TECHNICIEN DESSINATEUR BÂTIMENT
-  ISTA INZEGANE | 2022 - 2024
-  Formation en dessin technique et architecture avec ArchiCAD et AutoCAD.
-
-• FORMATION QUALIFIANTE MÉTREUR
-  ISTA TASSILA | 2021 - 2022
-  Formation spécialisée en métrage et topographie.
-
-• BACCALAURÉAT SCIENCE VIE ET TERRE
-  Lycée Qualifiante Essafa | 2019 - 2020
-  Baccalauréat scientifique spécialité Sciences de la Vie et de la Terre.
-
-COMPÉTENCES TECHNIQUES
-Développement:
-• HTML5 / CSS3
-• JavaScript
-• Bootstrap / Tailwind
-• React.js / Redux
-• PHP / MySQL
-
-Outils & Bases:
-• MySQL
-• Figma UI/UX
-• Git et GitHub
-
-LANGUES
-• ARABE: LANGUE MATERNELLE
-• FRANÇAIS: COURANT
-• ANGLAIS: INTERMÉDIAIRE
-
-LOISIRS
-• Basketball
-• Aikido
-• Music
-
-EXPÉRIENCE PROFESSIONNELLE
-• DESSINATEUR BÂTIMENT; ARCHICAD (2D ET 3D)
-  ARCHITECTE U.N.P.L, INZEGANE | 01-03-2024 — 31-03-2024
-  Modélisation de projets architecturaux sur ARCHICAD en 2D et 3D.
-  Réalisation de plans d'étage, coupes et façades.
-  Export de documents PDF, DWG et IFC pour coordination technique.
-
-• MÉTREUR : AUTOCAD
-  CABINET BOULMERS, AIT MELLOU | 20-06-2022 — 16-07-2022
-  Participation aux travaux topographiques sur le terrain.
-  Mise au net de plans topographiques sur AutoCAD à partir de levés terrain.
-
-PROJETS RÉALISÉS
-• XREDUCATION Dashboard
-  Admin Dashboard / EdTech
-  Dashboard éducatif moderne pour monitorer étudiants, performance et revenus avec Chart.js et Firebase.
-  Démo: https://xreducation-dashboard.vercel.app/
-
-• Zest & Co.
-  E-commerce / Brand Website
-  Plateforme e-commerce premium pour boissons artisanales avec animations fluides et checkout optimisé.
-  Démo: https://healthy-drink-shop.vercel.app/
-
-• Gestion Stagiaires
-  Management System / Education
-  Système complet de gestion des stagiaires avec React, Redux Toolkit et interface responsive.
-  Démo: https://gestionstagiaire.vercel.app/
-
-• Gestion Bibliothèque
-  Management System / Education
-  Système de gestion bibliothèque avec inventaire livres, suivi emprunts et interface utilisateur.
-  Démo: https://gestionlivres.vercel.app/
-
-• NeoTech Shop
-  E-commerce / Electronics Platform
-  Plateforme e-commerce moderne pour produits électroniques avec UI/UX moderne et dark mode.
-  Démo: https://myshop-react-nu.vercel.app/
-    `;
-
-    // Create a blob with the CV content
-    const blob = new Blob([cvContent], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'MOUAD_MEKRECH_CV.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    // Also trigger print dialog for PDF option
+    // Trigger print dialog which allows saving as PDF
     setTimeout(() => {
       window.print();
-    }, 500);
+    }, 100);
   };
 
   return (
@@ -168,11 +61,11 @@ PROJETS RÉALISÉS
               <div className="flex gap-6">
                 <div className="w-24 h-32 md:w-32 md:h-40 rounded bg-slate-100 border overflow-hidden shrink-0">
                   <img 
-                    src="/images/mouad.png" 
+                    src="/IMAGES/mouad.png" 
                     alt="Mouad Mekrech" 
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = "/images/mouad.png";
+                      (e.target as HTMLImageElement).src = "/IMAGES/mouad.png";
                     }}
                   />
                 </div>
