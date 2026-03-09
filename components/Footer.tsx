@@ -15,9 +15,9 @@ const Footer: React.FC<FooterProps> = ({ onSectionChange }) => {
   };
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub', color: 'hover:bg-gray-700' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:bg-blue-600' },
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:bg-pink-600' }
+    { icon: Github, href: ' https://github.com/MouadDev12', label: 'GitHub', color: 'hover:bg-gray-700' },
+    { icon: Linkedin, href: ' https://www.linkedin.com/in/mouad-mekrech-5b1057330/', label: 'LinkedIn', color: 'hover:bg-blue-600' },
+    { icon: Instagram, href: 'https://www.instagram.com/itzme.mouad/', label: 'Instagram', color: 'hover:bg-pink-600' }
   ];
 
   const quickLinks = ['Home', 'Skills', 'Projects', 'Education', 'Contact'];
@@ -102,7 +102,7 @@ const Footer: React.FC<FooterProps> = ({ onSectionChange }) => {
                   <Mail size={18} className="text-prestige-red group-hover:text-white transition-colors" />
                 </div>
                 <div className="text-prestige-gray group-hover:text-white font-medium text-sm transition-all break-all pt-1">
-                  mouadmekrech12@gmail.com
+                  mouadmekrech1@gmail.com
                 </div>
               </li>
               <li className="flex items-start gap-3 group cursor-pointer p-3 rounded-lg hover:bg-white/5 transition-all duration-300">
