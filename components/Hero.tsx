@@ -59,7 +59,7 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
           
           <div className="relative w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
             <img 
-              src="/IMAGES/mouad.png" 
+              src="/IMAGES/Mouad.png" 
               alt="Mouad Mekrech" 
               className="w-full h-full object-cover grayscale brightness-75 contrast-125 group-hover:grayscale-0 transition-all duration-1000"
             />
@@ -85,12 +85,14 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
 
           {/* Social icons */}
           <div className="flex justify-center gap-6">
-            {[{Icon : Github , link : "https://github.com/MouadDev12"}, {Icon : Linkedin , link : "https://www.linkedin.com/in/mouad-mekrech-5b1057330/"}, {Icon : Instagram , link : "https://www.instagram.com/itzme.mouad/"}].map(({Icon , link}, idx) => (
+            {[{Icon : Github , link : "https://github.com/MouadDev12"},
+             {Icon : Linkedin , link : "https://www.linkedin.com/in/mouad-mekrech"}, 
+             {Icon : Instagram , link : "https://www.instagram.com/itzme.mouad/"}].map(({Icon , link}, idx) => (
               <a key={idx} href={link} target="_Blank" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-prestige-gray hover:text-prestige-red hover:border-prestige-red transition-all">
 
                 <Icon size={18} />
               </a>
-            ))}
+            ))}                
           </div>
 
           {/* Action Buttons */}
