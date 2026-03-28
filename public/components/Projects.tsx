@@ -73,7 +73,7 @@ const PROJECTS: Project[] = [
     logo: 'IMAGES/can afrique.png',
     description:'Real-time web application for following Africa Cup of Nations with live scores, fixtures, and team standings.', 
     longDescription: 'This CAN web application provides real-time match updates, live scores, and tournament standings for football fans. Built with a performance-focused architecture, it leverages WebSockets for instant data updates and delivers a smooth, responsive experience across devices. The project emphasizes scalability, real-time interaction, and clean UI for an engaging sports-tracking experience.',   
-    technologies: ['React', 'Redux Toolkit', 'React Router', 'CSS3','ESLint ', 'Vite','Design responsive' ,' Interface moderne '],
+    technologies: ['React', 'Redux Toolkit', 'React Router DOM', 'CSS3', 'Node.js' , 'Express.js'  ,'Design responsive']
     liveUrl: 'https://coupe-afrique-can-2025.vercel.app/',
     githubUrl: 'https://github.com/MouadDev12/coupe_afrique-can-2025'
   },
