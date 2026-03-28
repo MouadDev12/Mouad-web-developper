@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { X, Github, Rocket, Info, Code2, ArrowUpRight } from 'lucide-react';
-import { Project } from '../types';
+import { Project } from '../../types';
 import ProjectLoading from './ProjectLoading';
 
 interface ProjectModalProps {

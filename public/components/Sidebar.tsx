@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, User, Briefcase, GraduationCap, Mail } from 'lucide-react';
-import { Section } from '../types';
+import { Section } from '../../types';
 
 interface SidebarProps {
   activeSection: Section;

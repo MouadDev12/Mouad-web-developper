@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, User, LayoutGrid, GraduationCap, Mail } from 'lucide-react';
-import { Section } from '../types';
+import { Section } from '../../types';
 
 interface NavbarProps {
   activeSection: Section;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Instagram, Mail, Phone, MapPin, ChevronRight, ArrowUp, ExternalLink, Heart, Code, Sparkles } from 'lucide-react';
-import { Section } from '../types';
+import { Section } from '../../types';
 
 interface FooterProps {
   onSectionChange: (section: Section) => void;

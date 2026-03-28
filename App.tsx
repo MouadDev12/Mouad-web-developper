@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './animations.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import LoadingScreen from './components/LoadingScreen';
-import CVModal from './components/CVModal';
-import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
-import SkillsMarquee from './components/SkillsMarquee';
-import Chatbot from './components/Chatbot';
+import Navbar from './public/components/Navbar';
+import Hero from './public/components/Hero';
+import Projects from './public/components/Projects';
+import Skills from './public/components/Skills';
+import Education from './public/components/Education';
+import Contact from './public/components/Contact';
+import LoadingScreen from './public/components/LoadingScreen';
+import CVModal from './public/components/CVModal';
+import Footer from './public/components/Footer';
+import Sidebar from './public/components/Sidebar';
+import SkillsMarquee from './public/components/SkillsMarquee';
+import Chatbot from './public/components/Chatbot';
 import { Section } from './types';
 
 const App: React.FC = () => {
