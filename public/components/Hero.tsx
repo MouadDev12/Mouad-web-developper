@@ -59,7 +59,7 @@ const Hero: React.FC<HeroProps> = ({ onExploreClick, onResumeClick }) => {
           
           <div className="relative w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
             <img 
-              src="/IMAGES/Mouad.png" 
+              src="/IMAGES/Me.png" 
               alt="Mouad Mekrech" 
               className="w-full h-full object-cover grayscale brightness-75 contrast-125 group-hover:grayscale-0 transition-all duration-1000"
             />

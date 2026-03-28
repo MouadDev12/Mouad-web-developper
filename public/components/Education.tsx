@@ -1,5 +1,5 @@
 import React from 'react';
-import { EducationItem } from '../types';
+import { EducationItem } from '../../types';
 import { MapPin, GraduationCap } from 'lucide-react';
 
 const EDUCATION_DATA: EducationItem[] = [
@@ -8,7 +8,7 @@ const EDUCATION_DATA: EducationItem[] = [
     degree: 'Full-Stack Web Development',
     institution: 'ISTA Ait Melloul',
     period: '2024 — Present',
-    description: 'Specializing in React, Node.js, and modern cloud architectures. Focused on building scalable and user-friendly web applications.'
+    description: 'Specializing in React, Larvel, and modern cloud architectures. Focused on building scalable and user-friendly web applications.'
   },
   {
     id: '2',
